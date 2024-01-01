@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu primeiro "Olá, mundo!" com Python</title>
+        <link rel="stylesheet" href="/style/reset.css">
+        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <section class="main">
+            <header>
+                <div class="center menu-container">
+                    <div class="logo">
+                        <h3>Meu primeiro <br> "Olá, mundo!" com Python</h3>
+                    </div>
+
+                    <div class="menu">
+                        <a href="index.html">Principal</a>
+                        <a href="introducao.html">Introdução a computação</a>
+                        <a href="logica.html">Lógica de programação</a>
+                        <a href="python.html">Python</a>
+                        <a href="algoritmo.html">Primeiro algoritmo</a>
+                        <a href="variaveis.html">Variáveis</a>
+                        <a href="concatenacao.html">Concatenação</a>
+                        <a href="input.html">Função input()</a>
+                        <a href="format.html">Função format()</a>
+                        <a href="conclusao.html">Conclusão</a>
+                        <a class="active-menu" href="desafio.html">Desafio final</a>
+                        <a href="agradecimentos.html">Agradecimentos</a>
+                        <a href="contato.html">Contato</a>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+            <div class="container">
+                <div class="text-introducao">
+                    <h2>Desafio final!</h2>
+                    <br><br>
+                    <p>
+                        Let’s go!! Nosso desafio final consiste em criar um algoritmo para calcular a média escolar de um aluno, com os conteúdos vistos até este momento fica fácil não é mesmo?<br> 
+                        Dicas: faça um algoritmo que receba 6 variáveis, nome do aluno, matéria, nota do primeiro bimestre, nota do segundo bimestre, nota do terceiro bimestre e nota do quarto bimestre 
+                        (lembre-se de colocar a função para indicar que o valor se trata de um número inteiro, ex: nota = int(input('Qual a nota?')) ), após este input criar uma variável que fará o algoritmo fazer o cálculo da média (caso tenha 
+                        dúvida sobre como calcular a média fale com seu professor de matemática), após o cálculo fazer uma nova variável utilizando a função format() com a frase “A média do aluno x na matéria y foi de z.” <br><br>
+                        <h2>Boa sorte!</h2>
+                        <br><br>
+                    </p>
+
+                    <p>Clique no botão abaixo para ver a resposta:</p>
+                    <br><br>
+                    
+                    <button id="mostrarImagem">Resposta</button>
+                    <img class="imagem-desafio" id="imagemDesafio" src="/imagens/desafio.png" alt="Imagem print da resposta do desafio"> 
+                </div>
+            </div>
+
+        <script>
+            document.getElementById("mostrarImagem").addEventListener("click", function() {
+                var imagemDesafio = document.getElementById("imagemDesafio");
+                imagemDesafio.style.display = (imagemDesafio.style.display === "none") ? "block" : "none";
+            });
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.js"></script>
+
+        <footer>
+            <p class="copyright">&copy; Meu primeiro "Olá, mundo!" com Python - 2023</p>
+        </footer>
+    </body>
+</html>

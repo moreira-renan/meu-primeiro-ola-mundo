@@ -1,0 +1,202 @@
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+   max-width: 1400px;
+   padding: 0 2%;
+   display: flex;
+   margin: 0 auto;
+}
+
+body{
+   background-color: #29458a;
+}
+
+header{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 40px 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 90px;
+}
+
+.logo{
+   color: white;
+   margin-top: 12px;
+   font-size: 20px;
+   position: relative;
+   max-width: 150px;
+}
+
+.menu-container{
+   width: 100%;
+   justify-content: space-between;
+}
+
+.menu-container a.active-menu{
+   background-color: rgb(39, 39, 166);
+   border-radius: 10%;
+   border-color: black;
+   transition: 0.8s;
+}
+
+.menu-container a.active-menu:hover{
+   background-color: rgb(26, 26, 98);
+   color: rgb(224, 224, 10);
+   border-radius: 10%;
+   border-color: black;
+}
+
+.menu-container a{
+   color: rgb(255, 255, 255);
+   display: inline-block;
+   justify-content: center;
+   margin: 0 10px;
+   text-decoration: none;
+   padding: 0 10px;
+   line-height: 40px;
+   transition: 0.8s;
+}
+
+.menu-container a:hover{
+   color: rgb(145, 139, 139);
+}
+
+section.main{
+   position: relative;
+   width: 100%;
+   min-height: 150px;
+   padding: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   overflow: hidden;
+}
+
+.container{
+   position: relative;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.container .text{
+   color: white;
+   font-size: 18px;
+   position: relative;
+   max-width: 800px;
+   margin-left: 80px;
+   margin-right: 20px;
+   text-align: justify;
+}
+
+.container .text p{
+   color: white;
+}
+
+.container .text-introducao{
+   color: white;
+   font-size: 18px;
+   position: relative;
+   max-width: 1150px;
+   margin-left: 80px;
+   margin-right: 20px;
+   text-align: justify;
+}
+
+.container .text-introducao h2{
+   font-size: 22px;
+   font-weight: bold;
+   color: white;
+}
+
+.container .text-introducao p{
+   color: white;
+}
+
+
+.container .imagem{
+   margin-right: 50px;
+}
+
+.container .imagem-introducao{
+   align-items: center;
+   width: 200px;
+   height: 200px;
+   border-radius: 10%;
+}
+
+.container .imagem-comuns{
+   align-items: center;
+   width: 400px;
+   height: 200px;
+   border-radius: 5%;
+}
+
+.container .imagem-nota{
+   align-items: center;
+   width: 400px;
+   height: 300px;
+   border-radius: 5%;
+}
+
+.container .imagem-desafio{
+   display: none;
+   align-items: center;
+   width: 900px;
+   height: 300px;
+   border-radius: 5%;
+}
+
+.container .lista-logica{
+   margin-left: 20px;
+   list-style-type: disc;
+}
+
+.container .lista-logica li:hover{
+   color: gray;
+   transition: 0.8s;
+   cursor: context-menu;
+}
+
+.container .link{
+   color: white;
+}
+
+.container .link:hover{
+   color: gray;
+   transition: 0.8s;
+   cursor: pointer;
+}
+
+footer{
+   margin-top: 30px;
+   text-align: center;
+   padding: 6px;
+   color: white;
+}
+
+#mostrarImagem {
+   margin-bottom: 20px;
+   padding: 10px 20px;
+   font-size: 16px;
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+#mostrarImagem:hover {
+   background-color: #45a049;
+}
